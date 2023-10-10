@@ -1,0 +1,97 @@
+body{
+    font-family: sans-serif;
+}
+h3{
+    color:white;
+    font-family: sans-serif;
+}
+.Slider1 .carousel{
+position:relative;
+height: 75vh;
+
+}
+
+
+.Slider1 .carousel .overlay{
+    padding:1rem;
+    border-radius: 30px;
+    position: absolute;
+    top:0%;
+    transform: translateY(-50);
+    left: 7.5%;
+    text-align: left;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    height: 100%;
+    display: none;
+    color:white;
+    
+    
+}
+
+.Slider1 .carousel .overlay__title{
+    margin: O.8rem 0 1rem 0
+}
+
+.Slider1 .carousel .overlay__text{
+    width: 33%;
+    text-align: left;
+    
+}
+
+.Slider1 .carousel .slider-wrapper.axis-horizontal{
+    
+    width: 95vw;
+    border-radius: 10px;
+    
+
+}
+
+
+.Slider1 .carousel .slide img{
+    height:auto;
+    width: auto;
+    border-radius: 30px;
+
+
+}
+
+.Slider1 li.slide{
+    border-radius: 30px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    height: auto;
+    width: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.Slider1 li.slide:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+    overflow: visible;
+   }
+
+
+   
+.Slider1 li.slide:hover .overlay{
+    display: block;
+
+}
+
+
+
+.Slider1 .carousel .control-dots{
+    position: absolute;
+    bottom: 10;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1; 
+}
+
+.Slider1 .carousel .slider-wrapper.axis-horizontal ul.slider.animated{
+    transform: translate3d(-500%, 0px, 0px);
+    transition-duration: 500ms;
+}
+
+

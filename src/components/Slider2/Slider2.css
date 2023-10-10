@@ -1,0 +1,183 @@
+body{
+    font-family: sans-serif;
+}
+h3.title{
+    color:white;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 3rem;
+}
+.Slider2 .carousel{
+position:relative;
+height: 50vh;
+overflow:visible;
+z-index: 0;
+
+
+}
+
+
+.Slider2 .carousel .slider-wrapper.axis-horizontal{
+    
+    width: 95vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+
+}
+
+
+
+
+
+.Slider2 li.slide{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    height: auto;
+    width: 20vw;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0 1rem 0 1rem;
+}
+
+.Slider2 li.slide:hover .image{
+    transform:scale(1.05)
+}
+.Slider2 li.slide .image{
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.Slider2 .carousel .slide .image img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    
+
+}
+
+.Slider2 li.slide .image:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    overflow: visible;
+}
+
+
+
+
+
+   
+.Slider2 li.slide .image:hover + .overlay__movie{
+    display: block;
+    z-index: 1;
+    cursor: initial;
+    width: 100%;
+    transform: scale(1.05);
+
+
+}
+
+.Slider2 li.slide .overlay__movie:hover{
+    display: block;
+
+}
+.Slider2 li.slide .overlay__movie:hover {
+    transform: scale(1.05);
+
+}
+
+
+
+.Slider2 .carousel .overlay__movie{
+    padding:1rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100%;
+    display: none;
+    color:white;
+    background-color: black;
+    position: relative;
+    top: 100;
+    z-index: 99;
+    box-shadow: whitesmoke;
+
+}
+
+.iconsLeft{
+    color:#FEFEFE;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+.icons .left{
+    float: left;
+    align-items: center;
+    display: flex;
+    gap:0.5rem;
+
+}
+
+
+.icons .right{
+    float: right;
+
+    
+}
+
+
+
+.left:hover .iconsLeft{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.left:hover{
+    cursor: pointer;}
+
+
+
+       
+
+
+.iconsRight{
+    color:#FEFEFE;
+    size:50px;
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+.iconsRight:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.Slider2 .carousel .overlay__title{
+    font-size: medium;
+    margin-top: 3.5rem;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.Slider2 .carousel .overlay__text{
+    width: 100%;
+    color:#AAAA;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: left;
+
+
+}
+
+.Slider2 .carousel .slider-wrapper.axis-horizontal ul.slider.animated{
+    transform: translate3d(-500%, 0px, 0px);
+    transition-duration: 500ms;
+}
+
+
+
+
