@@ -1,0 +1,152 @@
+.navBar{
+    background-color: #00050D;
+    color :#AAAAAA;
+    display:flex;
+    align-items: center;
+    gap:2rem;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+    height: 4rem;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.navBar .siteTitle{
+    color:white;
+    text-decoration: none;
+
+}
+
+.navBar .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    
+    
+}
+.navBar .list .case{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.navBar .list .case:hover {
+    background-color: #191E25;
+    color: #fff;
+}
+.navBar .list .case .fleche{
+    color:inherit;
+    transition: transform 0.2s;
+    display:flex;
+    transform-origin: center;
+    
+}
+
+.navBar .list .case:hover .fleche{
+  transform:  rotate(180deg);
+  
+}
+
+
+.navBar .list .case .DropDownMenu{
+    display: none;
+    position: absolute;
+    width: fit-content;
+    min-width:100%;
+    top: 50%;
+    left: 0%;
+
+
+}
+
+.navBar .list .case:hover .DropDownMenu{
+    display: block;
+}
+
+.navBar .list .case .DropDownMenu .DropDownList{
+    list-style-type: none;
+    padding: 0;
+    margin-top:2rem;
+    display: block;
+    width:max-content ;    
+    background-color: #191E25;
+    min-width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+
+    
+}
+.navBar .list .case .DropDownMenu .DropDownList li{
+    background-color: #191E25;
+    text-align: left;
+    color: white;
+    padding: 1rem 1.5rem 1rem 1rem;
+    
+}
+
+
+
+
+.navBar .list .case .DropDownMenu .DropDownList  li:hover,td:hover{
+
+    background-color: white;
+    color:#191E25
+}
+
+
+
+.link{
+    text-decoration: none;
+}
+
+#Genres{
+    columns: 3;
+    column-gap: 0px;
+    
+}
+
+
+
+.modal, .overlay-modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay-modal{
+    backdrop-filter: blur(10px);
+}
+
+
+.modal-content {
+    position: absolute;
+    top: 20%;
+    left: 85.63%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+
+

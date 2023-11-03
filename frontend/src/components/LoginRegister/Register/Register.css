@@ -1,0 +1,134 @@
+.Register {
+    position: fixed;
+    display :block;
+    width: 25%;
+    background-color: rgba(0, 0, 0,0.5); /* Couleur d'arrière-plan avec une opacité de 0.5 (50%) */
+    backdrop-filter: blur(10px); /* Applique un flou de 10 pixels à l'arrière-plan */
+    align-items: center;
+    text-align: center; /* Texte centré horizontalement */
+    justify-content: center;
+    border: 2px solid #ccc; /* Bordure grise de 2px */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    color:white;
+  }
+  
+  .Register .inputWrap{
+    align-items: baseline;
+  }
+  .Register .input{
+    height: fit-content;
+    width: 75%;
+    margin: 2rem 0 0 0;
+    height: 2rem;
+    border : none;
+    background-color:white;
+    font-size: 1rem;
+  }
+
+  .Register .input:focus{
+    outline:none;
+  }
+
+
+  .Register #check-password-security{
+    margin-top: 1rem;
+    height: 4rem;
+    text-align: left;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  .Register .btn-wrapper{
+    display: flex;
+    gap:2rem;
+    padding-top: 2.5rem;
+    text-align: center;    
+    padding-bottom: 2.5rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+
+  }
+  
+  .Register .btn{
+    flex:1;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+   
+
+  }
+
+  .Register .btn:hover{
+    cursor: pointer;
+    background-position: left;
+  }
+
+  
+
+  .Register #btn-login{
+    background-color: white;
+    color:#191E25;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+  }
+
+
+
+
+
+  .Register #btn-register {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .Register #btn-register::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width:auto;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .Register #btn-register:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .Register #btn-register:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
