@@ -7,14 +7,17 @@
     align-items: center;
     text-align: center; /* Texte centré horizontalement */
     justify-content: center;
-    border: 2px solid #ccc; /* Bordure grise de 2px */
+    border: 2px solid #3E4446; /* Bordure grise de 2px */
     border-radius: 10px; /* Coins arrondis */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
     color:white;
   }
   
   .Register .inputWrap{
-    align-items: baseline;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
   .Register .input{
     height: fit-content;
@@ -22,8 +25,9 @@
     margin: 2rem 0 0 0;
     height: 2rem;
     border : none;
-    background-color:white;
+    background-color:#181A1B;
     font-size: 1rem;
+    color:white;
   }
 
   .Register .input:focus{
@@ -38,6 +42,24 @@
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1rem;
+    color:darkgray;
+  }
+
+  .Register #samePassword{
+    margin-top: 0.5rem;
+    height: 1rem;
+    text-align: left;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    color: lightcoral;
+    justify-content: center;
+    align-items: center;
+    z-index :1;
+    position: absolute;
+    left: 12.5%;
   }
   
 

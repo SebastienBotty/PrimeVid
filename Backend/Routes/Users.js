@@ -12,8 +12,8 @@ router.use(cors());
 
 
 router.post("/register", async (req, res) => {
-    const { username,password } = req.body;
-
+    const { username,email,password } = req.body;
+    console.log(req.body)
     const user= db.find(u=>u.username === username)
     if (user){
         return res.json({message:"User already existing"})
@@ -22,7 +22,7 @@ router.post("/register", async (req, res) => {
 
     const salt= bcrypt.genSaltSync(13);
     const hash = bcrypt.hashSync(password,salt);
-    db.push({username:username,password:hash})
+    db.push({username:username,email:email,password:hash})
     return res.json(db);
   });
   
