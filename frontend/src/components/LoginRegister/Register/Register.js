@@ -42,9 +42,12 @@ function Register(props) {
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
     checkPassword(e.target.value)
+    checkSamePassword(passwordCheck,e.target.value)
+
   };
   const handlePasswordCheckChange = (e) => {
     setPasswordCheck(e.target.value);
+    checkPassword(e.target.value)
     checkSamePassword(password,e.target.value)
   };
 
@@ -80,6 +83,16 @@ function Register(props) {
         })
     }
 
+    const checkSpace = (string)=>{
+      if (string.includes(' ')){
+        console.log("Les espaces sont interdits:" + string)
+        return false
+      }else{
+        console.log("pas d'espace:" + string)
+        return true
+      }
+    }
+
     const flipCard = (e)=>{
       e.preventDefault()
         props.handleFlip()
@@ -88,7 +101,7 @@ function Register(props) {
     const isFormValid = () => {
       const areAllTrue = Object.values(passwordSecurity).every(value => value === true);
 
-      if (username && password && email && samePassword && areAllTrue){
+      if (username && password && email && samePassword && areAllTrue &&  checkSpace(username) && checkSpace(password) && checkSpace(email)){
         console.log("Form validé")
         return true
       }
@@ -104,7 +117,7 @@ function Register(props) {
   
   const inscription= (e)=>{
     e.preventDefault()
-    if (isFormValid){
+    if (isFormValid()){
        console.log("data envoyé: " + username,email,password)
       fetch('http://localhost:3001/user/register',{
         method: 'POST',
